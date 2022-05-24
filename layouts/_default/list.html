@@ -4,7 +4,14 @@
 
 {{ define "main" }}
 <main id="main" class="archive">
-  {{ $pages := where .Data.Pages "Type" "post" }}
+
+  {{ if eq .Page.Type "tags" }}
+    <h1>#{{ .Page.Title | urlize }}</h1>
+  {{ else if eq .Page.Type "categories" }}
+    <h1>Category: {{ .Page.Title }}</h1>
+  {{ end }}
+  
+  {{ $pages := where .Data.Pages "Type" "posts" }}
   {{ range $pages.GroupByDate "2006-01" }}
   <div class="post-group">
     <h2>{{ dateFormat "January 2006" (printf "%s-01" .Key) }}</h2>
@@ -18,8 +25,5 @@
     </ul>
   </div>
   {{ end }}
-  <div class="post-group">
-    <h2>...</h2>
-  </div>
 </main>
 {{ end }}

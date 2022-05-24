@@ -1,3 +1,7 @@
+#main > h1 {
+    text-align: center;
+}
+
 #main > .post-group > ul {
     border-left: gray solid 1px;
     list-style-type: none;
