@@ -1,6 +1,7 @@
 # TeXify
 
-A minimal, latex-style hugo theme for personal blogging.
+This is a fork of [TeXify](https://github.com/queensferryme/hugo-theme-texify), a minimal, latex-style hugo theme for personal blogging.
+On this fork, I make opinionated changes I use for my [personal blog](https://hightower.space/). A list of the changes can be found in CHANGELOG.md.
 
 ![screenshot](https://raw.githubusercontent.com/queensferryme/hugo-theme-texify/master/images/screenshot.png)
 
