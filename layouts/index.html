@@ -14,7 +14,7 @@
     {{ if ne .Params.tags nil }}
     <div>
       {{ range .Params.tags }}
-      <a class="link" href='{{ "tags" | absURL }}/{{ . | urlize }}'>#{{ . }}</a><br/>
+      <a class="link" href='{{ "tags" | absURL }}/{{ . | urlize }}'>#{{ . }}</a>
       {{ end }}
     </div>
     {{ end }}
